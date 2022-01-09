@@ -1,0 +1,30 @@
+.sidenav {
+    height: 80%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top:18%;
+    left: 0;
+    background-color:  #282c34;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5px;
+  }
+  
+  .sidenav a {
+    padding: 10px 5px 10px 10px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: rgb(66, 65, 65);
+  }
+  .chatitem{
+    list-style-type:none;
+  }
