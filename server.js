@@ -16,13 +16,14 @@ const Pusher = require('pusher');
       encrypted: true
     });
     app.set('PORT', process.env.PORT || 5000);
-    //app.get("/",(req,res)=>{res.send("helloworld")})
+    app.get("/",(req,res)=>{res.send("helloworld")})
     
     app.post('/message', (req, res) => {
       const payload = req.body;
+      console.log("sending to pusher");
       pusher.trigger('chat', 'message', payload);
-      res.send(payload)
+      res.send(payload);
     });
     
     app.listen(app.get('PORT'), () => 
-      console.log('Listening at ' + app.get('PORT')))
+      console.log('Listening at ' + app.get('PORT')));

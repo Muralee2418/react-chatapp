@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
-import './titlebar.css';
+import './topnavbar.css';
+import bell from './title-bar-icons/bell.png'
 //import { super } from '@babel/types';
 class TitleBar extends React.Component{
     constructor(props)
@@ -10,9 +11,18 @@ class TitleBar extends React.Component{
     render()
     {
         return(
-            <div className="titlebar">
-            <h5>{this.state.title}</h5>
+            
+            <div class="navbar">
+            <a href="#"><i class="fa fa-fw fa-user"></i></a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i></a> 
+            <a href="#"><i class="fa fa-fw fa-search"></i></a> 
+            <a class="active" href="#">{this.state.title}</a> 
+            
+            
+            
             </div>
+            
+           
         )
     }
 }

@@ -1,14 +1,21 @@
 .sidenav {
-    height: 80%;
+    height: 100%;
     width: 15%;
     position: fixed;
     z-index: 1;
-    top:18%;
+    top:0%;
     left: 0;
     background-color:  #282c34;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 5px;
+    padding-top: px;
+    box-shadow: 0px 2px 3px #212121;
+  }
+  .channelpic{
+
+    height:10%;
+    width:100%;
+
   }
   
   .sidenav a {
@@ -27,4 +34,17 @@
   }
   .chatitem{
     list-style-type:none;
+  }
+  .bottom-right {
+    position: absolute;
+   top: 8px;
+    left: 5px;
+    font-size:12px;
+  }
+  .container {
+    position: relative;
+    height:10%;
+    width:100%;
+    text-align: center;
+    color: white;
   }

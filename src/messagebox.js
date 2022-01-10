@@ -47,7 +47,9 @@ class MessageBox extends React.Component{
         message: this.state.text
       };
       console.log(this.state.text);
-      axios.post('http://localhost:5000/message', payload);
+      axios.post('http://localhost:5000/message', payload).then(response=>{
+          console.log(response.data.payload)
+      })
             
          
     }
@@ -57,11 +59,18 @@ render(){
     <div className="messagebox">
         <ul className="messages">
         {this.state.messages.map((message) => (
-          <li className="message">{message}</li>
+          <li className="message">
+          <div class="container"><img className="avatar" src={require('./avatar.png') } alt="Avatar"/>
+          <span class="time-right">11:02</span>
+          <p>
+              {message}
+            </p>
+            </div>
+        </li>                      
         ))}
         </ul>
         <input type="text" placeholder="Type your message.." value={this.state.text} onChange={this.handleChange}/>
-        <button className="sendbutton" onClick={this.handleClick}>Send</button>
+        
     </div>);
 }
 

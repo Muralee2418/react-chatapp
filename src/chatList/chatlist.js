@@ -10,14 +10,17 @@ class ChatList extends React.Component{
     constructor(props)
     {
         super(props)
-        this.state={chatitems:props.chatitems}
+        this.state={listitems:props.chatitems}
     }
     render(){
         return(
             <div id="mySidenav" className="sidenav">
-            
-        {this.state.chatitems.map((chatitem) => (
-         <a href="#">{chatitem.title}</a>
+            <div className="img-container">
+            <div><img className="channelpic" src={require('./images/channelpic.png')}/> </div>
+            <div className="bottom-right">ReactJs Channel</div>
+            </div>
+        {this.state.listitems.map((listitem) => (
+         <a href="#">{listitem.title}</a>
         ))}
         
             

@@ -3,9 +3,41 @@
     top:0px;
     height:50px;
     width:100%;
-    text-align: left;
-    background:  #282c34;
+    text-align: center;
+    background:  #265ece;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     z-index: 1;
+}
+.title-bar-content{
+    height:30px;
+    width: 80%;
+    position: absolute;
+    background-color: rgb(161, 108, 43);
+    left:20%;
+    list-style: none;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.title-bar-content li{
+    float: left;
+    display: inline;
+    width:auto;
+}
+.title-icons{
+    background-color: rgb(9, 194, 80);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.title-icons li{
+    float: left;
+    display: inline;
+
+}
+
+
+img{
+    position: absolute;
+    height:10px;
+    width:10px;
 }
